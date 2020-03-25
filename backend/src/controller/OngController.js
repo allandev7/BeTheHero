@@ -8,7 +8,7 @@ module.exports = {
     },
 
     async insert (request, response) {
-
+        console.log('conectou aqui')
         const { name, email, whatsapp, cidade, uf } = request.body;
     
         const id = crypto.randomBytes(4).toString('HEX');
